@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>		
+		<nav>
+			<h1 class="logo">PIONAR</h1>
+			<ul class="navigation">
+				<li><a href="#">PROFILE</a></li>
+				<li><a href="#">WORKS</a></li>
+				<li><a href="#">ARCHIVE</a></li>
+				<li><a href="#">ABOUT</a></li>
+			</ul>
+		</nav>
+	</header>
+
+  
+
+  <wrap>
+      <div class="about_main">
+              <img src="./img/flower1.png" alt="flower_main" id="about_main_img2">
+              <img src="./img/logore.png" alt="logo_main" id="about_main_img1">
+        <!-- <p><U>The 2022 graduation exhibition site</U></p> -->
+      </div>
+
+
+      <div class="about-container">
+        <!-- <div class="about-subtitle"><h4>Pionar :</h4></div> -->
+        <div class="centerheadcon">
+          <div class="centerhead1">
+              <p>Pionar : </p>
+          </div>
+
+          <div class="centerhead2">
+              <p>2022 KOREAN <br> POLYTECHNIC <br> UNIVERSITY <br> DESIGN ENGINEERING <br> GRAD SHOW</p>
+          </div>
+        </div>
+        
+        <ul class="identity1">
+          <li><p class="up-on-scroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FLOWER THAT </p></li>
+          <li><p class="up-on-scroll">BLOOMS IN </p></li>
+          <li><p class="up-on-scroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ADVERSITY </p></li>
+        </ul>
+        <ul class="identity2">
+          <li><p class="up-on-scroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IS THE MOST RARE </p></li>
+          <li><p class="up-on-scroll">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AND BEAUTY OF ALL </p></li>
+        </ul>
+      </div>
+
+
+
+
+      <div class="about-container2">
+        <ul class="identity3">
+          <li><p class="up-on-scroll">IT'S THE SAME FOR YOU TOO </p><img src="./img/flower2.png" class="up-on-scroll" alt="flower3"></li>
+        </ul>
+      </div>
+
+      <div class="newsbox">
+        <div class="newsbox-head">  
+          <h2>NEWS</h2>
+        </div>
+
+        <div class="students-img">
+          <div class="Line1">
+            <div class="news-box">
+              <img src="./img/02.png">
+              <div class="news-name">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="news-box">
+              <img src="./img/about_img.png">
+              <div class="news-name">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="news-box">
+              <img src="./img/img3.png">
+              <div class="news-name">
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      
+
+        
+  </wrap> 
+
+
+  <footer>
+    <div class="footerLeft"><p>PIONAR</p></div>
+    <div class="footerCenter"><p>FLOWER THAT BLOOMS IN ADVERSITY<br>IS THE MOST RARE AND BEAUTY OF ALL</p></div>
+    <div class="footerRight">
+      <img src="./img/KPU.png" alt="kpu">
+      <h6>
+        <p class="min">기업을 품는 산학융합 선도대학</p>
+        <p>한국산업기술대학교</p>
+      </h6>
+      <p>COPYRIGHT © 2021 KOREA POLYTECHNIC UNIV, ALL RIGHTS RESERVED</p>
+    </div>
+  </footer>
+  <script>
+    function isElementUnderBottom(elem, triggerDiff) {
+    const { top } = elem.getBoundingClientRect();
+    const { innerHeight } = window;
+    return top > innerHeight + (triggerDiff || 0);
+  }
+  
+  function handleScroll() {
+    const elems = document.querySelectorAll('.up-on-scroll');
+    elems.forEach(elem => {
+      if (isElementUnderBottom(elem, -20)) {
+        elem.style.opacity = "0";
+        elem.style.transform = 'translateY(70px)';
+      } else {
+        elem.style.opacity = "1";
+        elem.style.transform = 'translateY(0px)';
+      }
+    })
+  }
+  
+  window.addEventListener('scroll', handleScroll);
+
+</script>
+ 
+ 
+</body>
+</html>
